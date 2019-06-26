@@ -1,0 +1,7 @@
+form10.form_subscribe:
+  title: 'FormSubscribe'
+  route_name: form10.form_subscribe
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
+

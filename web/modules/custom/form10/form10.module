@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains form10.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function form10_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the form10 module.
+    case 'help.page.form10':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Formto subscribe') . '</p>';
+      return $output;
+
+    default:
+  }
+}

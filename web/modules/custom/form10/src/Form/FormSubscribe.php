@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\form9\Form;
+namespace Drupal\form10\Form;
 
 use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
@@ -15,7 +15,7 @@ class FormSubscribe extends ConfigFormBase {
    */
   protected function getEditableConfigNames() {
     return [
-      'form9.formsubscribe',
+      'form10.formsubscribe',
     ];
   }
 
@@ -30,28 +30,25 @@ class FormSubscribe extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $config = $this->config('form9.formsubscribe');
+    $config = $this->config('form10.formsubscribe');
     $form['date'] = [
       '#type' => 'date',
-      '#title' => $this->t('Date'),
+      '#title' => $this->t('Date :'),
       '#default_value' => $config->get('date'),
     ];
-    $form['nom'] = [
+    $form['noms'] = [
       '#type' => 'fieldset',
-      '#title' => $this->t('Nom'),
-      '#description' => $this->t('your name'),
-      '#size' => 60 ,
-      '#MAXLENGHT' => 120 ,
+      '#title' => $this->t('Noms'),
+      '#description' => $this->t('Votre nom'),
     ];
     $form['prenoms'] = [
       '#type' => 'fieldset',
       '#title' => $this->t('Prenoms'),
-      '#description' => $this->t('Prenoms'),
+      '#description' => $this->t('Vos Prenoms'),
     ];
     $form['envoyer'] = [
       '#type' => 'submit',
       '#title' => $this->t('envoyer'),
-      '#description' => $this->t('Click to send'),
       '#default_value' => $config->get('envoyer'),
     ];
     return parent::buildForm($form, $form_state);
@@ -70,9 +67,9 @@ class FormSubscribe extends ConfigFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     parent::submitForm($form, $form_state);
 
-    $this->config('form9.formsubscribe')
+    $this->config('form10.formsubscribe')
       ->set('date', $form_state->getValue('date'))
-      ->set('nom', $form_state->getValue('nom'))
+      ->set('noms', $form_state->getValue('noms'))
       ->set('prenoms', $form_state->getValue('prenoms'))
       ->set('envoyer', $form_state->getValue('envoyer'))
       ->save();

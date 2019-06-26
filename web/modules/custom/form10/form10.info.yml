@@ -1,0 +1,5 @@
+name: 'form10'
+type: module
+description: 'Formto subscribe'
+core: 8.x
+package: 'Custom'
