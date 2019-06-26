@@ -1,0 +1,13 @@
+{
+    "name": "form_test",
+    "type": "drupal-module",
+    "description": "Teting a form",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/form_test",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/form_test",
+        "source": "http://cgit.drupalcode.org/form_test",
+    },
+}

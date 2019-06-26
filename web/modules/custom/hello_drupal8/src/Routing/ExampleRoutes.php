@@ -25,7 +25,7 @@ class ExampleRoutes {
       // Route defaults:
       array(
         '_controller' => '\Drupal\hello_drupal8\Controller\SayHelloToDrupal8::content',
-        '_title' => 'Hello2'
+        '_title' => 'Dynamic Route Test : '
       ),
       // Route requirements:
       [

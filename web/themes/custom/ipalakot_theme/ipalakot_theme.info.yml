@@ -1,0 +1,15 @@
+name: ipalakot_theme
+type: theme
+description: 'Ipalakot theme on testing'
+package: Other
+core: 8.x
+libraries:
+  - ipalakot_theme/global-styling
+ 
+base theme: bartik
+
+regions:
+  header: header
+  content: Content
+  footer: footer
+  sidebar_right: Sidebar right

@@ -1,0 +1,5 @@
+name: 'form9'
+type: module
+description: 'An simple example of a config form'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,7 @@
+form_test.default_form:
+  title: 'DefaultForm'
+  route_name: form_test.default_form
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
+
