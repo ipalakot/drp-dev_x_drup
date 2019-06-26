@@ -1,0 +1,4 @@
+name: Hello Drupal 8
+description: Creates a page showing "Hy Drupale World Module".
+type: module
+core: 8.x

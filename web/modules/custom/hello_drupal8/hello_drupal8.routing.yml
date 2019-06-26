@@ -1,0 +1,19 @@
+route_callbacks:
+  - '\Drupal\hello_drupal8\Routing\ExampleRoutes::routes'
+  
+#hello_drupal8.content:
+#  path: '/salutation'
+#  defaults:
+#    _controller: '\Drupal\hello_drupal8\Controller\SayHelloToDrupal8::hi'
+#    _title: 'Hello Word'
+#  requirements:
+#    _permission: 'access content'
+
+
+#hello_drupal8.contentparam1:
+#  path: '/salutation/{mon_nom}'
+#  defaults:
+#    _controller: '\Drupal\hello_drupal8\Controller\SayHelloToDrupal8::lenom'
+#    _title: 'Hello Word2'
+#  requirements:
+#    _permission: 'access content'

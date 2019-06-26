@@ -1,0 +1,22 @@
+<?php
+
+/* 
+ * Implementation of my Hook_user
+ */
+
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Url;
+
+function hello_drupal8_user_login($account){
+//Redirection to the frontpage
+    $url = Url::fromRoute('<front>');
+
+//Redirection to the Internal Node
+     $url = Url::fromUserInput('</node/7');
+     
+    $new_url = new RedirectResponse($url->toString());
+
+    
+    $new_url->send();    
+
+}
